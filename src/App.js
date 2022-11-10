@@ -12,21 +12,24 @@ import MesDocument from "./Components/pages/mesDocument";
 import TableauDeBord from "./Components/pages/tableauBord";
 import DocumentRecu from "./Components/pages/documentRecu";
 import DocumentRH from "./Components/pages/DocumentRH";
+import Setting from "./Components/pages/parametre";
 
 
 function App() {
 const [isOffLine]=useState(false)
-const [ nav , setNav] = useState(true)
+const [ nav , setNav] = useState(false)
 
 function showNav (){
   setNav ( prevState => !prevState )
 } 
   return (
-    <div className=" bg-slate-50">
+    <div className=" bg-blue-50 h-screen ">
       {isOffLine ?<Connexion/>: 
-      <div className={nav? "flex ":""}>
-       {nav && <Nav/>} 
-        <div className="">
+      <div className="flex" >
+       <Nav
+        value ={nav} 
+        />
+        <div className=" w-full ">
           <Head handleClick = {showNav}/>
 
           <Routes>
@@ -37,6 +40,7 @@ function showNav (){
       <Route path="/DocRh" element ={<DocumentRH/>}/>
       <Route path="/colaborateur" element ={<Collaborateur/>}/>
       <Route path="/trash" element ={<Corbeille/>}/>
+      <Route path="/setting" element ={<Setting/>}/>
     </Routes>
         </div>
       </div>
