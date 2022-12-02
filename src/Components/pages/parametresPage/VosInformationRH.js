@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function VosInformation(){
+function VosInformationRH(){
 
     const  [ formsData , setFormData]= useState({
         nom :"",
@@ -26,15 +26,8 @@ function VosInformation(){
         <h1 className="text-red-500 p-4 border-b-2 "> Vos information</h1>
         <main className="m-10 text-xs text-sky-900 ">
             <form methode ="" action="">
-                <label >Nom</label><br/>
-                <input className="border w-[90%] mb-4 focus:outline-none p-1 rounded" 
-            placeholder=""
-            type="text"
-            onChange={changed}
-            name="nom" 
-            value={formsData.nom} /><br/>
 
-                <label >Prenom</label><br/>
+                <label >Nom de l'entreprise</label><br/>
                 <input className="border w-[90%] mb-4 focus:outline-none p-1 rounded" 
                 placeholder=""
                 type="text"
@@ -43,7 +36,7 @@ function VosInformation(){
                 value={formsData.prenom}/><br/>
 
 
-                <label >E-mail professionnel</label><br/>
+                <label >E-mail entreprise</label><br/>
                 <input className="border w-[90%] mb-4 focus:outline-none p-1 rounded" 
                 placeholder=""
                 type="email"
@@ -52,7 +45,7 @@ function VosInformation(){
                 value={formsData.emailPro}/><br/>
 
 
-                <label >E-mail personnel</label><br/>
+                <label >Adresse</label><br/>
                 <input className="border w-[90%] mb-4 focus:outline-none p-1 rounded"
                 placeholder=""
                 type="email"
@@ -61,7 +54,7 @@ function VosInformation(){
                 value={formsData.emailPerso} /><br/>
 
 
-                <label >Telephone</label><br/>
+                <label >Contact </label><br/>
                 <input className="border w-[90%] mb-4  focus:outline-none p-1 rounded " 
                 placeholder=""
                 type="number"
@@ -79,4 +72,4 @@ function VosInformation(){
     </div>);
 }
 
-export default VosInformation
+export default VosInformationRH
