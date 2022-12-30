@@ -68,7 +68,7 @@ function Connexion(props) {
                                 required
                             /> <button className="p-1 outline-none text-lg ml-[-2rem] mt-[-1rem]" type="button" onClick={showclick}> {eyeState ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}</button><br />
                         </div>
-                        <p className="text-sm text-sky-900 font-normal text-right mx-14"> Mot de pass oublié ?  </p>
+                        <p className="text-sm text-sky-900 font-normal text-right mx-14"> Mot de passe oublié ?  </p>
                         <button type="submit"  className="border w-[85%]  m-3 px-20 p-2 text-white bg-sky-900   rounded-md" > Connexion  </button>
                     </form>
                     <p className=" m-3  p-2  rounded-md"> Je n'ai pas de compte <button onClick={()=>{dispatch(noHaveAccount())}} className="text-sky-900 "> S'inscrire </button></p>

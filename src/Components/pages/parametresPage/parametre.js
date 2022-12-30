@@ -2,7 +2,7 @@ import React from "react";
 import { Link,useResolvedPath,useMatch, Outlet } from "react-router-dom"
 function Setting() {
 
-const isRh = true
+const isRh = false
     return (<div className="p-10 h-screen overflow-hidden ">
         <h1 className="text-sky-900 text-xl font-semibold ">PARAMÈTRES</h1>
         <div className="flex">

@@ -124,7 +124,7 @@ async  function handleSubmit(e){
             <div className=" flex   mx-auto my-auto ">
                 <main className="  border p-10 mx-10 shadow-xl bg-white  rounded-xl    ">
                     <p  ref={errRef} className="flex items-center justify-center text-red-400 text-center" style={{ display: errmsg ?"" :"none" }}>{errmsg}</p>
-                    <h1 className="text-center text-5xl m-3 border-b-4 border-gray-600  w-[80%] pb-3 "> Register </h1>
+                    <h1 className="text-center text-5xl m-3 border-b-4 border-gray-600  w-[80%] pb-3 "> Inscrivez-vous  </h1>
                     <form methode="" action="" className="flex flex-col" onSubmit={handleSubmit}>
                         <div className="m-2">
                             <label htmlFor="email" className="text-sky-900 text-sm font-medium">Entrez votre Email</label>
@@ -142,15 +142,15 @@ async  function handleSubmit(e){
                                 onBlur={() => { setUserFocus(false) }}
                                 style={{ borderColor: validEmail ? "red" : "" }} />
                             {!validEmail && <p className=" text-pink-600 text-sm">
-                                Please provide a valid email address.
+                            Veuillez fournir une adresse email valide
                             </p>}
                         </div>
                         <div className="m-2">
-                            <label htmlFor ="password" className="text-sky-900 text-sm font-medium">Entrez votre mot de pass</label>
+                            <label htmlFor ="password" className="text-sky-900 text-sm font-medium">Entrez votre mot de passe</label>
                             <input className={inputStyle}
                                 id="password"
                                 type={eyeState ? "text" : "password"}
-                                placeholder="Mot de pass"
+                                placeholder="Mot de passe"
                                 style={{borderColor: validPwd ? "" : "" }}
                                 required
                                 name="pwd"
@@ -164,11 +164,11 @@ async  function handleSubmit(e){
                                 type="button" onClick={showclick}>
                                 {eyeState ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}</button>
                             {!validPwd && <p className=" text-pink-600 text-sm">
-                                 8 carracteres des lettres majiscules et miniscules et des caractère speciaux.
+                                 8 caractères des lettres majuscules , minuscules et des caractères speciaux.
                             </p>}
                         </div>
                         <div className="m-2">
-                            <label htmlFor="confirm_pwd" className="text-sky-900 text-sm font-medium">Confirmer votre mot de pass</label>
+                            <label htmlFor="confirm_pwd" className="text-sky-900 text-sm font-medium">Confirmez votre mot de passe</label>
                             <input className={inputStyle}
                                 type={eyeState ? "text" : "password"}
                                 id="confirm_pwd"
@@ -181,12 +181,12 @@ async  function handleSubmit(e){
                                 aria-describedby= "confirmnote"
                                 onFocus={() => { setMatchFocus(true) }}
                                 onBlur={() => { setMatchFocus(false) }}
-                                placeholder="Mot de pass"/>
+                                placeholder="Mot de passe"/>
                                 <button className="p-1 outline-none text-lg ml-[-2rem] "
                                 type="button" onClick={showclick}>
                                 {eyeState ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}</button>
                         </div>
-                        <button type="submit" disabled={!validEmail || !validPwd || !validMatch ? true :false} className="border  m-3 px-20 p-2 text-white bg-blue-900  w-[87%] rounded-md" > Signe up </button>
+                        <button type="submit" disabled={!validEmail || !validPwd || !validMatch ? true :false} className="border  m-3 px-20 p-2 text-white bg-blue-900  w-[87%] rounded-md" > Inscription </button>
                     </form>
                      <button className="text-sky-900 pl-5" onClick={()=>{dispatch(haveAccount())}} > J'ai deja un compte </button>
                 </main>

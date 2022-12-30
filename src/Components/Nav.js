@@ -9,7 +9,7 @@ function Nav(props) {
     const showNav = props.value
 console.log(showNav)
     return (
-        <nav style={{width :showNav ? "5%" : "100%"}} className=" text-sky-900   h-screen transition-all duration-100 overflow-hidden  bg-gray-200 flex flex-col justify-between space-y-[85%] 2xl:space-y-96 pb-10 " >
+        <nav style={{width :showNav ? "5%" : "20%"}} className=" text-sky-900   h-screen transition-all duration-100 overflow-hidden  bg-gray-200 flex flex-col justify-between space-y-[85%] 2xl:space-y-96 pb-10 " >
             
             <div >
                 <div className="p-4" >
