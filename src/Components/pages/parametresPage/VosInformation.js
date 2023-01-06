@@ -34,14 +34,13 @@ function VosInformation(){
             name="nom" 
             value={formsData.nom} /><br/>
 
-                <label >Prenom</label><br/>
+                <label >Prénom</label><br/>
                 <input className="border w-[90%] mb-4 focus:outline-none p-1 rounded" 
                 placeholder=""
                 type="text"
                 onChange={changed}
                 name="prenom" 
                 value={formsData.prenom}/><br/>
-
 
                 <label >E-mail professionnel</label><br/>
                 <input className="border w-[90%] mb-4 focus:outline-none p-1 rounded" 
@@ -61,7 +60,7 @@ function VosInformation(){
                 value={formsData.emailPerso} /><br/>
 
 
-                <label >Telephone</label><br/>
+                <label >Téléphone</label><br/>
                 <input className="border w-[90%] mb-4  focus:outline-none p-1 rounded " 
                 placeholder=""
                 type="number"

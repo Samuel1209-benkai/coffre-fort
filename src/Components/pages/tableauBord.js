@@ -53,7 +53,7 @@ function TableauDeBord (){
     <div className="flex justify-between "> 
         <p>Document reçus </p>
         <select   name="cars" id="cars" className="bg-white border  p-1 border-sky-900 rounded focus:outline-none">
-            <option value="semainederniere">Semaine derniere </option>
+            <option value="semainederniere">Semaine dernière </option>
             <option value="mois dernier"> Mois dernier </option>
             <option value="anne derniere">annee derniere </option>
           </select>
@@ -77,11 +77,11 @@ function TableauDeBord (){
 
       <div className="border bg-white p-3  shadow-lg  rounded text-xs text-sky-900" >
     <div className="flex justify-between "> 
-        <p>Mes document </p>
+        <p>Mes documents </p>
         <select   name="cars" id="cars" className="bg-white border  p-1 border-sky-900 rounded  focus:outline-none">
-            <option value="semainederniere">Semaine derniere </option>
+            <option value="semainederniere">Semaine dernière </option>
             <option value="mois dernier"> Mois dernier </option>
-            <option value="anne derniere">annee derniere </option>
+            <option value="anne derniere">année dernière </option>
           </select>
       </div>
         <AreaChart

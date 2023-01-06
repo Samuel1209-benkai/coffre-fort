@@ -7,12 +7,12 @@ const isRh = false
         <h1 className="text-sky-900 text-xl font-semibold ">PARAMÈTRES</h1>
         <div className="flex">
             <nav className=" w-[25%] h-screen bg-white shadow-xl text-sky-900  mt-5 rounded-lg  flex-col flex">
-                    <h1 className=" m-5  text-lg font-medium" > Paramètre</h1>
+                    <h1 className=" m-5  text-lg font-medium" > Paramètres</h1>
                     <ul className="space-y-4 text-stone-500 text-sm">
-                   {!isRh && <CustomLink  className="  px-[25%]  " to=""> Vos information</CustomLink>}
+                   {!isRh && <CustomLink  className="  px-[25%]  " to=""> Vos informations</CustomLink>}
                     {/* { isRh && <CustomLink  className="  px-[25%]  " to="VosInformationRH"> Vos information</CustomLink>} */}
                     <CustomLink  className="  pl-[25%]   " to="Stockage"> Espace de stockage </CustomLink>
-                    <CustomLink  className ="   px-[25%]  " to="Motdepass">  Mot de pass</CustomLink>
+                    <CustomLink  className ="   px-[25%]  " to="Motdepass">  Mot de passe</CustomLink>
                     </ul>
             </nav>
             

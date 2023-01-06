@@ -59,7 +59,7 @@ const taille = Recu.length;
             <div>
                 <div className="flex">
                     <div className=" w-[20%] h-screen bg-white shadow-xl text-sky-900  mt-5 rounded-lg  flex-col flex">
-                        <h1 className=" m-5  text-lg font-medium" >Entité</h1>
+                        <h1 className=" m-5  text-lg font-medium" >Entités</h1>
                         <button className={ent1?"my-2 bg-stone-300 p-2":"my-2"} onClick={ent1click}>Entreprise 1 </button>
                         <button className={ent2?"my-2 bg-stone-300 p-2":"my-2"} onClick={ent2click}>Entreprise 2</button>
                         <button className={ent3?"my-2 bg-stone-300 p-2":"my-2"} onClick={ent3click}>Entreprise 2</button>
@@ -71,7 +71,7 @@ const taille = Recu.length;
                             <div >
                             <select id="periode" name="periode"  className="focus:outline-none border p-1 flex text-sky-900 border-sky-700  bg-white mx-4 rounded px-2" >
                                 <option value="Aujourd'hui">Aujourd'hui</option>
-                                <option value=" La semaine derniere">La semaine derniere</option>
+                                <option value=" La semaine derniere">La semaine dernière</option>
                                 <option value="Mois dernier">Mois dernier</option>
                                 <option value="Tout ">Tout</option>
                             </select>
@@ -81,7 +81,7 @@ const taille = Recu.length;
                             </div>
                             <button className=" border p-1 px-4 mx-4 bg-sky-900 text-white rounded mx-4 flex"> 
                             <span className="mx-1 pt-1"><MdCloudDownload /></span>
-                            Telecharger</button>
+                            Télécharger</button>
                         </div>
                                 <div className="flex">
                                     <p>Page 1 sur 20 </p>
@@ -106,7 +106,7 @@ const taille = Recu.length;
                                                 Date d'ajout
                                             </p>
                                             <p>
-                                                Etiquette
+                                                Etiquètte
                                             </p>
                                             <p>
                                                 Actions

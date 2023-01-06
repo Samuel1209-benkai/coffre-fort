@@ -58,10 +58,10 @@ function Connexion(props) {
                             />
                         </div>
                         <div className="m-4">
-                            <label htmlFor="Password" className="text-sky-900 text-sm font-medium">Mot de pass</label>
+                            <label htmlFor="Password" className="text-sky-900 text-sm font-medium">Mot de passe</label>
                             <input className=" placeholder:text-slate-400  border border-slate-400 w-[90%] mb-4 focus:outline-none  p-2 px-6 rounded bg-white  rounded-md shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 "
                                 type={eyeState ? "text" : "password"}
-                                placeholder="Mot de pass"
+                                placeholder="Mot de passe"
                                 onChange={(e)=>setPwd(e.target.value)}
                                 name="password"
                                 value={pwd}

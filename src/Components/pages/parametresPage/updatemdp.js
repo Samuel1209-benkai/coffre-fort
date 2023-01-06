@@ -25,10 +25,10 @@ function ModifieMdp(){
      }
 
     return(<div className=" m-5 mx-[10%] w-[40%]  h-[40%] bg-white rounded-lg shadow-xl">
-        <h1 className="text-red-500 p-4 border-b-2 "> Changer votre mot de pass</h1>
+        <h1 className="text-red-500 p-4 border-b-2 "> Changer votre mot de passe</h1>
         <main className="m-10 text-xs text-sky-900 ">
             <div>
-                <label >Votre mot de pass actuel</label><br/>
+                <label >Votre mot de passe actuel</label><br/>
                 <div className="flex">
                 <input className="border w-[90%] mb-4 focus:outline-none p-1 rounded" 
             placeholder=""
@@ -40,7 +40,7 @@ function ModifieMdp(){
 
             </div>
 
-                <label > Votre nouveau mot de pass (8 caract min) </label><br/>
+                <label > Votre nouveau mot de passe (8 caract min) </label><br/>
 <div className="flex">
                 <input className="border w-[90%] mb-4 focus:outline-none p-1 rounded" 
                 placeholder=" "
@@ -52,7 +52,7 @@ function ModifieMdp(){
                 </div>
 
 
-                <label >Confirmer votre nouveau mot de pass</label><br/>
+                <label >Confirmer votre nouveau mot de passe</label><br/>
                 <div className="flex">
                 <input className="border w-[90%] mb-4 focus:outline-none p-1 rounded" 
                 placeholder=""
